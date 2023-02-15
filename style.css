@@ -1,0 +1,167 @@
+
+
+/*
+.title-grid{
+    color: black;
+    font-family: 'Unbounded', cursive;
+    font-size: 35px;    
+    text-transform: uppercase;
+    text-align: center;
+    margin: 45px;
+}
+
+.grid-container{
+    width: 90%;
+    max-width: 1000px;
+    border: 10px solid black;
+    margin: auto;
+    font-size: 50px;
+    font-family: 'Unbounded', cursive;
+    line-height: 50px;
+    text-align: center;
+
+    /*ACTIVAMOS GRID*/
+   /*
+    display: grid;
+    grid-template-columns: 1fr 2fr 1fr;
+    grid-template-rows: repeat(4,1fr);
+    column-gap: 5px;
+    row-gap: 10px; 
+
+}
+    /*APLICO SOLO A LOS DIVS QUE ESTAN DENTRO DE LA CALASE GRID CONTAINER*/
+
+
+
+/*GRID AREAS*/
+/*
+#grilla{
+    margin-top: 20px;
+    display: grid;
+    grid-template-areas:
+    "nav header header"
+    "nav productos publicidad"
+    "nav servicios publicidad"
+    "nav footer footer";
+    grid-template-columns: 4fr 4fr 2fr;
+    grid-template-rows: 2.5fr 2.5fr 2.5fr 2.5fr;
+}
+
+.border{
+    border: 1px solid black;
+}
+
+header{
+    grid-area: header ;
+    background-color: mediumpurple;
+}
+
+footer{
+    grid-area: footer;
+    background-color: crimson;
+}
+
+nav{
+    grid-area: nav;
+    background-color: rgb(228, 143, 160);
+}
+
+#productos{
+    grid-area: productos;
+    background-color: #2f892f;
+}
+
+#servicios{
+    grid-area: servicios;
+    background-color: cornflowerblue;
+}
+
+aside{
+    grid-area: publicidad;
+    background-color: dimgray;
+}
+
+/*MEDIAQUERIES*/
+/*
+@media screen and (min-width: 768px){}
+
+
+
+/*CODIGO A LA PAGINA PROPIA*/
+
+h1 {
+    
+    background: #ffffff;
+    font-family: 'Unbounded', cursive;
+    color: black;
+    text-transform: uppercase;
+    text-align: center;
+    border: #000000 solid 2px;
+ }
+
+ #uno { 
+    font-size: small;
+ }
+
+.clase0 {
+    color: #000000;
+    background: #ffffff;
+    margin-top: 10px;
+    padding: 1px;
+    display: grid;
+    border: #000000 solid 2px;
+    grid-template-areas: 
+    "linea1" 
+    "linea2";
+}
+
+#linea1 {
+    grid-area: linea1 ;
+    background-color: rgb(255, 255, 255);
+    text-align: center;
+    font-family: 'Unbounded', cursive;
+    color: black;
+    text-transform: uppercase;
+    height: 4px; 
+    grid-template-columns: 1fr;
+    grid-template-rows: 1fr;
+    grid-auto-rows: 0px;
+}
+
+#linea2 {
+    grid-area: linea2 ;
+    background-color: rgb(255, 255, 255);
+    text-align: center;
+    font-family: 'Unbounded', cursive;
+    color: black;
+    text-transform: uppercase;
+    height: 30px; 
+}
+
+.clase1 {
+    color: #000000;
+    background: #ffffff;
+    margin-top: 6px;
+    padding: 0px;
+    display: grid;
+    grid-template-areas: 
+    "cuadro1 cuadro2 cuadro3" ;
+}
+
+.clase1 > div{
+    border: 1px solid #000000;
+    padding: 1px;
+    text-align: center;
+    text-transform: uppercase;
+    font-family: 'Unbounded', cursive;
+    color: black;
+    background-color: rgb(255, 255, 255);
+}
+
+#cuadro1 { 
+    margin: 1px;
+}
+
+
+    
+
