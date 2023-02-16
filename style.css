@@ -1,94 +1,10 @@
-
-
-/*
-.title-grid{
-    color: black;
-    font-family: 'Unbounded', cursive;
-    font-size: 35px;    
-    text-transform: uppercase;
-    text-align: center;
-    margin: 45px;
+* {
+    margin: 0px;
+    padding: 0px;
 }
 
-.grid-container{
-    width: 90%;
-    max-width: 1000px;
-    border: 10px solid black;
-    margin: auto;
-    font-size: 50px;
-    font-family: 'Unbounded', cursive;
-    line-height: 50px;
-    text-align: center;
 
-    /*ACTIVAMOS GRID*/
-   /*
-    display: grid;
-    grid-template-columns: 1fr 2fr 1fr;
-    grid-template-rows: repeat(4,1fr);
-    column-gap: 5px;
-    row-gap: 10px; 
-
-}
-    /*APLICO SOLO A LOS DIVS QUE ESTAN DENTRO DE LA CALASE GRID CONTAINER*/
-
-
-
-/*GRID AREAS*/
-/*
-#grilla{
-    margin-top: 20px;
-    display: grid;
-    grid-template-areas:
-    "nav header header"
-    "nav productos publicidad"
-    "nav servicios publicidad"
-    "nav footer footer";
-    grid-template-columns: 4fr 4fr 2fr;
-    grid-template-rows: 2.5fr 2.5fr 2.5fr 2.5fr;
-}
-
-.border{
-    border: 1px solid black;
-}
-
-header{
-    grid-area: header ;
-    background-color: mediumpurple;
-}
-
-footer{
-    grid-area: footer;
-    background-color: crimson;
-}
-
-nav{
-    grid-area: nav;
-    background-color: rgb(228, 143, 160);
-}
-
-#productos{
-    grid-area: productos;
-    background-color: #2f892f;
-}
-
-#servicios{
-    grid-area: servicios;
-    background-color: cornflowerblue;
-}
-
-aside{
-    grid-area: publicidad;
-    background-color: dimgray;
-}
-
-/*MEDIAQUERIES*/
-/*
-@media screen and (min-width: 768px){}
-
-
-
-/*CODIGO A LA PAGINA PROPIA*/
-
+/*Index*/
 h1 {
     
     background: #ffffff;
@@ -103,33 +19,53 @@ h1 {
     font-size: small;
  }
 
+ .Navegador { 
+    background-color: black;
+    color: aliceblue;
+    padding: 4px 10px;
+    display: inline-block;
+    text-decoration: none;
+    font-family: 'Unbounded', cursive;
+}
+.Navegador:hover { background: hsl(348, 79%, 45%);}
+nav {
+    background-color: rgba(214, 212, 212, 0.541);
+    padding: 4px;
+    display: flex;
+    justify-content: center;
+    }
+
+
 .clase0 {
     color: #000000;
     background: #ffffff;
     margin-top: 10px;
-    padding: 1px;
+    padding: 0px;
     display: grid;
     border: #000000 solid 2px;
     grid-template-areas: 
     "linea1" 
     "linea2";
+    grid-template-columns: 1fr;
+    grid-template-rows: 1fr;
+    grid-auto-rows: 100px;
 }
 
 #linea1 {
-    grid-area: linea1 ;
+    grid-area: linea1;
     background-color: rgb(255, 255, 255);
     text-align: center;
+    justify-content: center;
     font-family: 'Unbounded', cursive;
     color: black;
     text-transform: uppercase;
-    height: 4px; 
-    grid-template-columns: 1fr;
-    grid-template-rows: 1fr;
-    grid-auto-rows: 0px;
+    height: 60px; 
+
+
 }
 
 #linea2 {
-    grid-area: linea2 ;
+    grid-area: linea2;
     background-color: rgb(255, 255, 255);
     text-align: center;
     font-family: 'Unbounded', cursive;
@@ -158,10 +94,127 @@ h1 {
     background-color: rgb(255, 255, 255);
 }
 
-#cuadro1 { 
-    margin: 1px;
+#cuadro1, #cuadro2, #cuadro3 { 
+    margin: 0px;
 }
+
+.banner1 { 
+    font-family: 'Unbounded', cursive;
+    width: cover;
+    background: hsl(348, 79%, 45%);
+    clear: both;
+    text-align: center;
+    padding-top: 30px;
+    padding-left: 50px;
+    padding-right: 50px;
+    padding-bottom: 30px;
+    transition: 0.5s;
+    text-decoration: none;
+    
+}
+
+.claseb {
+    grid-area: linea2 ;
+    background-color: rgb(255, 255, 255);
+    text-align: center;
+    font-family: 'Unbounded', cursive;
+    color: black;
+    text-transform: uppercase;
+    height: 30px; 
+}
+/*Index*/
+
+
+/*Galeria*/
+.clase4 {
+    color: #000000;
+    background: #ffffff;
+    margin-top: 6px;
+    padding: 0px;
+    display: grid;
+    grid-template-areas: 
+    "cuadro1 cuadro2 cuadro3"
+    "cuadro4 cuadro5 cuadro6" ;
+}
+
+.clase4 > div{
+    padding: 1px;
+    text-align: center;
+    text-transform: uppercase;
+    font-family: 'Unbounded', cursive;
+    color: black;
+    background-color: rgb(255, 255, 255);
+
+}
+
+#a1 { 
+    grid-area: cuadro1;
+}
+
+#a2 { 
+    grid-area: cuadro2;
+}
+
+#a3 { 
+    grid-area: cuadro3;
+}
+
+#a4 { 
+    grid-area: cuadro4;
+}
+
+#a5 { 
+    grid-area: cuadro5;
+}
+
+#a6 { 
+    grid-area: cuadro6;
+}
+/*Galeria*/
+
+/*Responsive*/
+
+@media screen and (max-width: 768px) {
 
 
     
+    h1 {
+        font-size: 20px;
+    }
 
+    nav > a {
+        font-size: 10px;
+    
+    }
+    
+    .Navegador {
+        padding: 10px;
+        margin: 5px;
+    }
+
+    #linea1 {
+        display: block;
+    }
+
+    #linea2 {
+        display: block;
+    }
+
+.clase1 {
+    display: block;
+}
+
+h2, h3 {
+    display: block;
+    font-size: 15px;
+}
+
+h4, p, h5, .banner1, .claseb > h2, h3 {
+    font-size: 12px;    
+}
+
+.clase4 {
+    display: block;
+}
+
+}
